@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yusuf Gbolahan Lawal — Data &amp; Business Analyst</title>
+<meta name="description" content="Data and business analyst turning raw operational and financial data into clear recommendations for decision-makers. Portfolio of projects in SaaS finance, healthcare, marketing, and logistics analytics." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0b1220;
+    --bg2:#0f1a2e;
+    --card:#13203a;
+    --card2:#172a4a;
+    --line:rgba(255,255,255,.08);
+    --text:#e7eefc;
+    --muted:#9fb0cf;
+    --accent:#4f9cf9;
+    --accent2:#34e0b8;
+    --accent-grad:linear-gradient(135deg,#4f9cf9,#34e0b8);
+    --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:rgba(11,18,32,.7);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-weight:800;letter-spacing:-.02em;font-size:1.05rem}
+  .brand span{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{color:var(--muted);font-size:.92rem;font-weight:500;transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:600;font-size:.9rem;transition:transform .15s,box-shadow .2s}
+  .btn-primary{background:var(--accent-grad);color:#062018;box-shadow:0 8px 24px -8px rgba(52,224,184,.5)}
+  .btn-primary:hover{transform:translateY(-2px)}
+  .btn-ghost{border:1px solid var(--line);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  /* HERO */
+  header{position:relative;padding:120px 0 90px;overflow:hidden}
+  header::before{content:"";position:absolute;inset:0;background:
+     radial-gradient(600px 300px at 80% -10%,rgba(79,156,249,.18),transparent),
+     radial-gradient(500px 280px at 10% 20%,rgba(52,224,184,.12),transparent);pointer-events:none}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.4fr .9fr;gap:40px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--accent2);letter-spacing:.04em;margin-bottom:18px}
+  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 12px var(--accent2)}
+  h1{font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin-bottom:18px}
+  h1 .grad{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .lead{font-size:1.12rem;color:var(--muted);max-width:560px;margin-bottom:30px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-card{background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+  .hero-card h3{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
+  .stat{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+  .stat:last-child{border:0}
+  .stat b{font-size:1.15rem}
+  .stat span{color:var(--muted);font-size:.85rem}
+  /* SECTIONS */
+  section{padding:80px 0}
+  .sec-head{margin-bottom:44px}
+  .sec-tag{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--accent);letter-spacing:.05em}
+  h2{font-size:clamp(1.7rem,3.5vw,2.3rem);letter-spacing:-.02em;margin-top:8px;font-weight:700}
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:start}
+  .about-grid p{color:var(--muted);font-size:1.05rem}
+  .about-grid p+p{margin-top:16px}
+  .meta-list{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .meta-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+  .meta-list li:last-child{border:0}
+  .meta-list span{color:var(--muted)}
+  /* SKILLS */
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .skill{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:border-color .2s,transform .15s}
+  .skill:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .skill b{display:block;font-size:.98rem;margin-bottom:6px}
+  .skill small{color:var(--muted);font-size:.82rem;line-height:1.5}
+  /* PROJECTS */
+  .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .proj{background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .18s,border-color .2s,box-shadow .25s;display:flex;flex-direction:column}
+  .proj:hover{transform:translateY(-5px);border-color:rgba(79,156,249,.4);box-shadow:0 24px 50px -28px rgba(79,156,249,.4)}
+  .proj-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+  .proj h3{font-size:1.18rem;letter-spacing:-.01em}
+  .proj .ico{font-size:1.4rem}
+  .proj p{color:var(--muted);font-size:.95rem;margin-bottom:18px;flex:1}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+  .tag{font-family:'JetBrains Mono',monospace;font-size:.72rem;padding:4px 10px;border-radius:999px;background:rgba(79,156,249,.12);color:#9cc7ff;border:1px solid rgba(79,156,249,.25)}
+  .proj a.link{display:inline-flex;align-items:center;gap:7px;font-size:.88rem;font-weight:600;color:var(--accent2)}
+  .proj a.link:hover{text-decoration:underline}
+  .more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:24px}
+  .mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;transition:border-color .2s,transform .15s}
+  .mini:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .mini h4{font-size:1rem;margin-bottom:5px}
+  .mini p{color:var(--muted);font-size:.85rem;margin-bottom:10px}
+  .mini a{font-size:.82rem;color:var(--accent);font-weight:600}
+  /* EDUCATION */
+  .edu{display:grid;gap:16px}
+  .edu-item{display:flex;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;align-items:flex-start}
+  .edu-badge{flex:0 0 auto;width:46px;height:46px;border-radius:12px;background:var(--accent-grad);display:grid;place-items:center;font-size:1.3rem}
+  .edu-item h4{font-size:1.05rem}
+  .edu-item .yr{color:var(--accent2);font-family:'JetBrains Mono',monospace;font-size:.78rem}
+  .edu-item p{color:var(--muted);font-size:.9rem;margin-top:3px}
+  /* CONTACT */
+  .contact{text-align:center;background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:24px;padding:60px 30px;margin-bottom:20px}
+  .contact h2{margin-bottom:14px}
+  .contact p{color:var(--muted);max-width:520px;margin:0 auto 28px}
+  .contact .hero-cta{justify-content:center}
+  footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+  footer a{color:var(--accent)}
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(max-width:860px){
+    .hero-grid,.about-grid{grid-template-columns:1fr}
+    .proj-grid{grid-template-columns:1fr}
+    .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Yusuf<span>.</span>analyst</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow"><span class="dot"></span> Data &amp; Business Analyst · Lagos, Nigeria</span>
+      <h1>Turning raw data into <span class="grad">decisions leaders trust.</span></h1>
+      <p class="lead">I'm Yusuf Gbolahan Lawal — I build financial models, dashboards, and analyses that turn operational and financial data into clear recommendations for executive decision-makers.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">View my projects →</a>
+        <a class="btn btn-ghost" href="https://github.com/Gbolahan5000" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-card reveal">
+      <h3>By the numbers</h3>
+      <div class="stat"><b>$1.42B</b><span>healthcare billings analyzed</span></div>
+      <div class="stat"><b>$227M</b><span>ad spend evaluated</span></div>
+      <div class="stat"><b>640K+</b><span>passenger trips modeled</span></div>
+      <div class="stat"><b>104.9%</b><span>net revenue retention</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-tag">01 — About</span><h2>A bit about me</h2></div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I'm a data and business analyst who turns raw operational and financial data into clear recommendations for executive decision-makers. I've delivered analysis across SaaS finance, healthcare, performance marketing, and logistics — from revenue and retention modeling to capacity and budget optimization.</p>
+        <p>I'm strong in structured problem solving, Excel, Power BI, and SQL, and in presenting findings through executive decks and reports. I evaluate AI outputs against professional standards and am motivated by making an impact that matters for clients and society.</p>
+      </div>
+      <ul class="meta-list reveal">
+        <li><span>Role</span><b>Data &amp; Business Analyst</b></li>
+        <li><span>Location</span><b>Lagos, Nigeria</b></li>
+        <li><span>Focus</span><b>Finance · Healthcare · Ops</b></li>
+        <li><span>Open to</span><b>Remote / Hybrid roles</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-tag">02 — Skills</span><h2>Tools &amp; techniques</h2></div>
+    <div class="skills">
+      <div class="skill reveal"><b>Power BI &amp; DAX</b><small>Interactive dashboards, time intelligence, cohort and variance modeling</small></div>
+      <div class="skill reveal"><b>SQL (SQL Server)</b><small>Querying, joins, aggregation, and analysis over transactional data</small></div>
+      <div class="skill reveal"><b>Excel &amp; Power Query</b><small>Financial modeling, ETL, pivot analysis, scenario building</small></div>
+      <div class="skill reveal"><b>Tableau</b><small>Visual analytics and executive reporting</small></div>
+      <div class="skill reveal"><b>Star Schema Modeling</b><small>Dimensional modeling for clean, scalable BI</small></div>
+      <div class="skill reveal"><b>Financial Modeling</b><small>MRR, LTV, CAC, NRR, cohort churn, budget reallocation</small></div>
+      <div class="skill reveal"><b>Executive Reporting</b><small>Decks, briefings, and strategic proposals for leadership</small></div>
+      <div class="skill reveal"><b>Prompt Engineering</b><small>LLM output evaluation and edge-case scenario design</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-tag">03 — Projects</span><h2>Selected analytical work</h2></div>
+    <div class="proj-grid">
+      <article class="proj reveal">
+        <div class="proj-top"><h3>Vaultly SaaS Analytics</h3><span class="ico">📈</span></div>
+        <p>End-to-end financial models for a B2C SaaS startup, covering $168.3K MRR, 104.9% Net Revenue Retention, and $50.27 ARPU across multi-tier plans. Delivered Power BI dashboards and narrative decks with cohort churn and variance modeling.</p>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Financial Modeling</span><span class="tag">Cohort Analysis</span></div>
+        <a class="link" href="https://github.com/Gbolahan5000/VaultlySaaS_Analytics" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+      <article class="proj reveal">
+        <div class="proj-top"><h3>Clinical Efficiency &amp; Revenue Integrity</h3><span class="ico">🏥</span></div>
+        <p>Analyzed six years of hospital data ($1.42B in billings) to find the intersection between clinical operations and financial performance. Integrated Length of Stay with billing trends to inform resource allocation and flagged a 22.98% YoY revenue expansion against capacity bottlenecks.</p>
+        <div class="tags"><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">DAX</span><span class="tag">Healthcare</span></div>
+        <a class="link" href="https://github.com/Gbolahan5000/Bridging-Clinical-Efficiency-and-Revenue-Integrity" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+      <article class="proj reveal">
+        <div class="proj-top"><h3>Performance Marketing Analytics</h3><span class="ico">🎯</span></div>
+        <p>Analyzed 90,000 ad records ($227M spend) for a feminine wellness brand across Meta and TikTok, isolating 406 underperforming ad variants hidden by surface-level metrics. Authored seasonal budget reallocation plans to maximize ROAS.</p>
+        <div class="tags"><span class="tag">Excel</span><span class="tag">ROAS</span><span class="tag">Budget Strategy</span><span class="tag">Marketing</span></div>
+        <a class="link" href="https://github.com/Gbolahan5000/PerformanceMarketing_Analytics" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+      <article class="proj reveal">
+        <div class="proj-top"><h3>Rail Operations Analytics</h3><span class="ico">🚆</span></div>
+        <p>Simulated a real-world rail transport analytics scenario, analyzing 400K+ transactions and 640K passenger trips to understand passenger behavior, revenue performance, and operational efficiency. Produced route-level optimization and staffing proposals from time-series demand modeling.</p>
+        <div class="tags"><span class="tag">SQL</span><span class="tag">Time-Series</span><span class="tag">Logistics</span><span class="tag">Optimization</span></div>
+        <a class="link" href="https://github.com/Gbolahan5000/RailOperations_Analytics" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+    </div>
+    <div class="more-grid">
+      <div class="mini reveal"><h4>Grocery Store Analytics</h4><p>SQL analysis of grocery transaction history uncovering purchasing trends and localized demand peaks.</p><a href="https://github.com/Gbolahan5000/GroceryStore_Analytics" target="_blank" rel="noopener">View repo →</a></div>
+      <div class="mini reveal"><h4>MetroBank Analytics</h4><p>Customer relationships, transaction behavior, branch performance, and risk pattern analysis.</p><a href="https://github.com/Gbolahan5000/MetroBank_Analytics" target="_blank" rel="noopener">View repo →</a></div>
+      <div class="mini reveal"><h4>US Superstore</h4><p>Classic retail analytics project exploring sales, profit, and regional performance.</p><a href="https://github.com/Gbolahan5000/US-Superstore" target="_blank" rel="noopener">View repo →</a></div>
+      <div class="mini reveal"><h4>SQL Projects</h4><p>A collection of SQL analytics projects and query practice.</p><a href="https://github.com/Gbolahan5000/SQL_Projects" target="_blank" rel="noopener">View repo →</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-tag">04 — Education</span><h2>Academic background</h2></div>
+    <div class="edu">
+      <div class="edu-item reveal">
+        <div class="edu-badge">🎓</div>
+        <div><div class="yr">Expected 2026</div><h4>Master of Public Health (MPH)</h4><p>Lead City University, Ibadan, Nigeria — Thesis on determinants of vaccine hesitancy among caregivers of under-five children.</p></div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-badge">📘</div>
+        <div><div class="yr">Graduated 2023</div><h4>B.Sc. Physiology</h4><p>Osun State University, Osun, Nigeria.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <span class="sec-tag">05 — Contact</span>
+      <h2>Let's work together</h2>
+      <p>Looking for a data analyst who can translate complex data into decisions? I'm open to remote and hybrid roles. Reach out and let's talk.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="mailto:gblawal00@gmail.com">Email me →</a>
+        <a class="btn btn-ghost" href="https://github.com/Gbolahan5000" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <footer>
+      Built &amp; deployed with GitHub Pages · © <span id="yr"></span> Yusuf Gbolahan Lawal · <a href="mailto:gblawal00@gmail.com">gblawal00@gmail.com</a>
+    </footer>
+  </div>
+</section>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
