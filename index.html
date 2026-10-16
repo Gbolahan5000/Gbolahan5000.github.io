@@ -23,6 +23,18 @@
     --radius:16px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
+  /* chart silhouettes */
+  .hero-charts{position:absolute;inset:0;pointer-events:none;z-index:0}
+  .hero-charts svg{width:100%;height:100%;display:block}
+  .hero-charts .chart{opacity:.14}
+  .hero-charts .ch1 rect{fill:#4f9cf9}
+  .hero-charts .ch3 rect{fill:#4f9cf9}
+  .hero-charts .ch2 .line{stroke:#34e0b8;stroke-width:4;stroke-linecap:round}
+  .hero-charts .ch2 .area{fill:url(#heroFade)}
+  .hero-charts .ch2 circle{fill:#34e0b8}
+  .hero-grid,.wrap.hero-grid{position:relative;z-index:1}
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
@@ -109,6 +121,10 @@
   .contact .hero-cta{justify-content:center}
   footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
   footer a{color:var(--accent)}
+  /* profile photo */
+  .about-side{display:flex;flex-direction:column;gap:20px}
+  .photo-frame{width:170px;height:170px;border-radius:50%;padding:4px;background:var(--accent-grad);box-shadow:0 20px 50px -20px rgba(79,156,249,.5);margin:0 auto}
+  .photo-frame img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
   /* reveal */
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
@@ -134,6 +150,25 @@
 </nav>
 
 <header id="top">
+  <div class="hero-charts" aria-hidden="true">
+      <svg viewBox="0 0 900 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <g class="chart ch1">
+          <rect x="40" y="250" width="26" height="120" rx="4"/><rect x="76" y="210" width="26" height="160" rx="4"/>
+          <rect x="112" y="280" width="26" height="90" rx="4"/><rect x="148" y="180" width="26" height="190" rx="4"/>
+          <rect x="184" y="230" width="26" height="140" rx="4"/><rect x="220" y="150" width="26" height="220" rx="4"/>
+        </g>
+        <g class="chart ch2">
+          <path class="area" d="M0,340 C120,320 180,240 300,250 C420,260 480,140 600,150 C700,158 760,80 900,60 L900,420 L0,420 Z"/>
+          <path class="line" d="M0,340 C120,320 180,240 300,250 C420,260 480,140 600,150 C700,158 760,80 900,60" fill="none"/>
+          <circle cx="300" cy="250" r="7"/><circle cx="600" cy="150" r="7"/><circle cx="900" cy="60" r="7"/>
+        </g>
+        <g class="chart ch3">
+          <rect x="660" y="120" width="18" height="60" rx="3"/><rect x="684" y="100" width="18" height="80" rx="3"/>
+          <rect x="708" y="140" width="18" height="40" rx="3"/><rect x="732" y="80" width="18" height="100" rx="3"/>
+          <rect x="756" y="120" width="18" height="60" rx="3"/>
+        </g>
+      </svg>
+    </div>
   <div class="wrap hero-grid">
     <div class="reveal">
       <span class="eyebrow"><span class="dot"></span> Data &amp; Business Analyst · Lagos, Nigeria</span>
@@ -162,12 +197,15 @@
         <p>I'm a data and business analyst who turns raw operational and financial data into clear recommendations for executive decision-makers. Through independent, self-directed projects, I've built analysis across SaaS finance, healthcare, performance marketing, and logistics — from revenue and retention modeling to capacity and budget optimization.</p>
         <p>I'm strong in structured problem solving, Excel, Power BI, and SQL, and in presenting findings through executive decks and reports. I evaluate AI outputs against professional standards and am motivated by making an impact that matters for clients and society.</p>
       </div>
-      <ul class="meta-list reveal">
+      <div class="about-side reveal">
+      <div class="photo-frame"><img src="profile.jpg" alt="Yusuf Lawal" /></div>
+      <ul class="meta-list">
         <li><span>Role</span><b>Data &amp; Business Analyst</b></li>
         <li><span>Location</span><b>Lagos, Nigeria</b></li>
         <li><span>Focus</span><b>Finance · Healthcare · Ops</b></li>
         <li><span>Open to</span><b>Remote / Hybrid roles</b></li>
       </ul>
+    </div>
     </div>
   </div>
 </section>
@@ -249,13 +287,13 @@
       <h2>Let's work together</h2>
       <p>Looking for a data analyst who can translate complex data into decisions? I'm open to remote and hybrid roles. Reach out and let's talk.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="mailto:gblawal00@gmail.com">Email me →</a>
+        <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=gblawal00@gmail.com" target="_blank" rel="noopener">Email me →</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/gb-lawal/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-ghost" href="https://github.com/Gbolahan5000" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
     <footer>
-      Built &amp; deployed with GitHub Pages · © <span id="yr"></span> Yusuf Gbolahan Lawal · <a href="mailto:gblawal00@gmail.com">gblawal00@gmail.com</a>
+      Built &amp; deployed with GitHub Pages · © <span id="yr"></span> Yusuf Gbolahan Lawal · <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gblawal00@gmail.com" target="_blank" rel="noopener">gblawal00@gmail.com</a>
     </footer>
   </div>
 </section>
