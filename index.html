@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yusuf Lawal — Data & Business Analyst</title>
-<meta name="description" content="Data and business analyst turning raw operational and financial data into clear recommendations for decision-makers. Portfolio of projects in SaaS finance, healthcare, marketing, and logistics analytics." />
+<title>Yusuf Lawal — Data &amp; Business Analyst</title>
+<meta name="description" content="Yusuf Lawal, data and business analyst in Lagos. Business Data Checkup: I clean one Excel or CSV dataset and answer three to five agreed business questions in a short report with next steps. Also open to analyst roles." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
@@ -60,29 +60,47 @@
   .hero-grid{position:relative;display:grid;grid-template-columns:1.4fr .9fr;gap:40px;align-items:center}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--accent2);letter-spacing:.04em;margin-bottom:18px}
   .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 12px var(--accent2)}
-  h1{font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin-bottom:18px}
   h1 .grad{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .lead{font-size:1.12rem;color:var(--muted);max-width:560px;margin-bottom:30px}
+  .lead{font-size:1.08rem;color:var(--muted);max-width:580px;margin-bottom:30px}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-note{margin-top:18px;font-size:.88rem;color:var(--muted)}
+  .hero-note a{color:var(--accent2);font-weight:600}
+  .hero-note a:hover{text-decoration:underline}
   .hero-card{background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
   .hero-card h3{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
-  .stat{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
-  .stat:last-child{border:0}
-  .stat b{font-size:1.15rem}
-  .stat span{color:var(--muted);font-size:.85rem}
+  .stat{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .stat:last-of-type{border:0}
+  .stat b{font-size:1.15rem;white-space:nowrap}
+  .stat span{color:var(--muted);font-size:.85rem;text-align:right}
+  .stat em{display:block;font-style:normal;font-size:.74rem;color:rgba(159,176,207,.72);letter-spacing:.01em}
+  .card-note{font-size:.76rem;color:var(--muted);line-height:1.5;border-top:1px solid var(--line);margin-top:14px;padding-top:12px}
   /* SECTIONS */
   section{padding:80px 0}
   .sec-head{margin-bottom:44px}
   .sec-tag{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--accent);letter-spacing:.05em}
   h2{font-size:clamp(1.7rem,3.5vw,2.3rem);letter-spacing:-.02em;margin-top:8px;font-weight:700}
+  /* OFFER */
+  .offer{background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid rgba(52,224,184,.26);border-radius:24px;padding:40px 36px;box-shadow:0 40px 80px -50px rgba(52,224,184,.4)}
+  .badge-offer{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;padding:6px 13px;border-radius:999px;background:rgba(52,224,184,.12);color:#7ff0d0;border:1px solid rgba(52,224,184,.32);margin-bottom:18px}
+  .offer h2{font-size:clamp(1.8rem,3.6vw,2.4rem)}
+  .offer .sub{color:var(--muted);font-size:1.05rem;max-width:660px;margin:14px 0 32px}
+  .offer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px}
+  .offer-col h4{font-family:'JetBrains Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin-bottom:14px}
+  .offer-col ul{list-style:none;display:grid;gap:11px}
+  .offer-col li{position:relative;padding-left:22px;color:var(--muted);font-size:.97rem}
+  .offer-col li::before{content:"";position:absolute;left:0;top:.58em;width:8px;height:8px;border-radius:50%;background:var(--accent2);opacity:.85}
+  .offer-note{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+  .offer-note p{color:var(--muted);font-size:.9rem;max-width:520px}
   /* ABOUT */
   .about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:start}
   .about-grid p{color:var(--muted);font-size:1.05rem}
   .about-grid p+p{margin-top:16px}
   .meta-list{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-  .meta-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+  .meta-list li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
   .meta-list li:last-child{border:0}
-  .meta-list span{color:var(--muted)}
+  .meta-list span{color:var(--muted);flex:0 0 auto}
+  .meta-list b{text-align:right}
   /* SKILLS */
   .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
   .skill{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:border-color .2s,transform .15s}
@@ -93,20 +111,33 @@
   .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
   .proj{background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .18s,border-color .2s,box-shadow .25s;display:flex;flex-direction:column}
   .proj:hover{transform:translateY(-5px);border-color:rgba(79,156,249,.4);box-shadow:0 24px 50px -28px rgba(79,156,249,.4)}
-  .proj-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+  .proj-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:12px}
   .proj h3{font-size:1.18rem;letter-spacing:-.01em}
   .proj .ico{font-size:1.4rem}
-  .proj p{color:var(--muted);font-size:.95rem;margin-bottom:18px;flex:1}
+  .proj p{color:var(--muted);font-size:.95rem;margin-bottom:16px;flex:1}
+  .src{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.7rem;padding:4px 10px;border-radius:999px;border:1px dashed rgba(159,176,207,.4);color:var(--muted);margin-bottom:12px}
+  .proj-lead{grid-column:1 / -1;border-color:rgba(52,224,184,.3);background:linear-gradient(150deg,var(--card2),var(--card))}
+  .proj-lead h3{font-size:1.45rem}
+  .lead-body{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:start}
+  .lead-body p{margin-bottom:0}
+  .lead-list{list-style:none;display:grid;gap:9px}
+  .lead-list li{position:relative;padding-left:20px;color:var(--muted);font-size:.92rem}
+  .lead-list li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--accent2);opacity:.85}
+  .lead-foot{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+  .lead-foot .tags{margin-bottom:0}
   .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
   .tag{font-family:'JetBrains Mono',monospace;font-size:.72rem;padding:4px 10px;border-radius:999px;background:rgba(79,156,249,.12);color:#9cc7ff;border:1px solid rgba(79,156,249,.25)}
   .proj a.link{display:inline-flex;align-items:center;gap:7px;font-size:.88rem;font-weight:600;color:var(--accent2)}
   .proj a.link:hover{text-decoration:underline}
-  .more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:24px}
+  .more-head{font-size:1.05rem;letter-spacing:-.01em;margin:38px 0 4px;color:var(--text)}
+  .more-sub{color:var(--muted);font-size:.9rem;margin-bottom:16px}
+  .more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:8px}
   .mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;transition:border-color .2s,transform .15s}
   .mini:hover{border-color:var(--accent);transform:translateY(-3px)}
   .mini h4{font-size:1rem;margin-bottom:5px}
   .mini p{color:var(--muted);font-size:.85rem;margin-bottom:10px}
   .mini a{font-size:.82rem;color:var(--accent);font-weight:600}
+  .proj-note{margin-top:26px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px;max-width:760px}
   /* EDUCATION */
   .edu{display:grid;gap:16px}
   .edu-item{display:flex;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;align-items:flex-start}
@@ -115,10 +146,15 @@
   .edu-item .yr{color:var(--accent2);font-family:'JetBrains Mono',monospace;font-size:.78rem}
   .edu-item p{color:var(--muted);font-size:.9rem;margin-top:3px}
   /* CONTACT */
-  .contact{text-align:center;background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:24px;padding:60px 30px;margin-bottom:20px}
+  .contact{text-align:center;background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:24px;padding:56px 30px;margin-bottom:20px}
   .contact h2{margin-bottom:14px}
-  .contact p{color:var(--muted);max-width:520px;margin:0 auto 28px}
-  .contact .hero-cta{justify-content:center}
+  .contact .intro{color:var(--muted);max-width:560px;margin:0 auto 30px}
+  .routes{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:840px;margin:0 auto 28px;text-align:left}
+  .route{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column}
+  .route h3{font-size:1.1rem;margin-bottom:8px}
+  .route p{color:var(--muted);font-size:.92rem;margin-bottom:18px;flex:1}
+  .route .btn{align-self:flex-start}
+  .contact-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:26px}
   footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
   footer a{color:var(--accent)}
   /* profile photo */
@@ -129,19 +165,21 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
   @media(max-width:860px){
-    .hero-grid,.about-grid{grid-template-columns:1fr}
+    .hero-grid,.about-grid,.offer-grid,.lead-body,.routes{grid-template-columns:1fr}
     .proj-grid{grid-template-columns:1fr}
     .nav-links{display:none}
+    .offer{padding:32px 24px}
+    .stat{flex-direction:row}
   }
 </style>
 </head>
 <body>
 <nav>
   <div class="wrap nav-in">
-    <a class="brand" href="#top">Yusuf<span>.</span>analyst</a>
+    <a class="brand" href="#top">Yusuf <span>Lawal</span></a>
     <div class="nav-links">
+      <a href="#checkup">Excel checkup</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a class="btn btn-primary" href="#contact">Get in touch</a>
@@ -172,38 +210,74 @@
   <div class="wrap hero-grid">
     <div class="reveal">
       <span class="eyebrow"><span class="dot"></span> Data &amp; Business Analyst · Lagos, Nigeria</span>
-      <h1>Turning raw data into <span class="grad">decisions leaders trust.</span></h1>
-      <p class="lead">I'm Yusuf Lawal — I build financial models, dashboards, and analyses that turn operational and financial data into clear recommendations for executive decision-makers.</p>
+      <h1>I help project-based businesses make clearer <span class="grad">cost decisions from Excel.</span></h1>
+      <p class="lead">My Business Data Checkup takes one Excel or CSV file you already use and turns it into answers: what your sales, costs, and project spend are actually doing. You get a cleaned dataset, three to five agreed questions answered, and a short report with next steps.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#projects">View my projects →</a>
-        <a class="btn btn-ghost" href="https://github.com/Gbolahan5000" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gblawal00@gmail.com&amp;su=Business%20Data%20Checkup%20enquiry" target="_blank" rel="noopener">Ask about an Excel cost checkup →</a>
+        <a class="btn btn-ghost" href="#projects">View analyst projects</a>
       </div>
+      <p class="hero-note">Also open to data analyst roles, remote or hybrid — <a href="#contact">details below</a>.</p>
     </div>
     <div class="hero-card reveal">
-      <h3>By the numbers</h3>
-      <div class="stat"><b>$1.42B</b><span>healthcare billings analyzed</span></div>
-      <div class="stat"><b>$227M</b><span>ad spend evaluated</span></div>
-      <div class="stat"><b>640K+</b><span>passenger trips modeled</span></div>
-      <div class="stat"><b>104.9%</b><span>net revenue retention</span></div>
+      <h3>Scale of the data behind these case studies</h3>
+      <div class="stat"><b>₦21.4bn</b><span>purchase orders<em>Simulated MEP case study</em></span></div>
+      <div class="stat"><b>$1.42B</b><span>hospital billings<em>Public Kaggle dataset</em></span></div>
+      <div class="stat"><b>$227M</b><span>ad spend<em>Case-study dataset</em></span></div>
+      <div class="stat"><b>640K+</b><span>passenger trips<em>Simulated rail scenario</em></span></div>
+      <p class="card-note">These are independent case studies, not client engagements. The figures describe the size of each dataset, not savings or revenue I delivered. Where a dataset is public, synthetic, or simulated, the project card says so.</p>
     </div>
   </div>
 </header>
 
+<section id="checkup">
+  <div class="wrap">
+    <div class="offer reveal">
+      <span class="badge-offer">Primary offer</span>
+      <h2>Business Data Checkup</h2>
+      <p class="sub">Find out what your existing business records reveal about sales, costs, performance, and potential problems — using the spreadsheets you already keep.</p>
+      <div class="offer-grid">
+        <div class="offer-col">
+          <h4>What you receive</h4>
+          <ul>
+            <li>A review of one existing Excel or CSV dataset.</li>
+            <li>Data cleaning and basic quality checks.</li>
+            <li>Analysis of three to five agreed business questions.</li>
+            <li>A concise summary of findings and recommended next steps.</li>
+            <li>A simple Excel report, with a chart or visual summary if useful.</li>
+          </ul>
+        </div>
+        <div class="offer-col">
+          <h4>Who this suits</h4>
+          <ul>
+            <li>Small retailers and distributors tracking sales or inventory.</li>
+            <li>Service businesses tracking revenue and expenses.</li>
+            <li>Small contractors or MEP firms tracking budgets, procurement, and project costs.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="offer-note">
+        <p>Send the file and the questions you want answered. You get scope, timing, and a fixed fee before any work starts.</p>
+        <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gblawal00@gmail.com&amp;su=Business%20Data%20Checkup%20enquiry" target="_blank" rel="noopener">Ask about a checkup →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="about">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-tag">01 — About</span><h2>A bit about me</h2></div>
+    <div class="sec-head reveal"><span class="sec-tag">02 — About</span><h2>A bit about me</h2></div>
     <div class="about-grid">
       <div class="reveal">
-        <p>I'm a data and business analyst who turns raw operational and financial data into clear recommendations for executive decision-makers. Through independent, self-directed projects, I've built analysis across SaaS finance, healthcare, performance marketing, and logistics — from revenue and retention modeling to capacity and budget optimization.</p>
-        <p>I'm strong in structured problem solving, Excel, Power BI, and SQL, and in presenting findings through executive decks and reports. I evaluate AI outputs against professional standards and am motivated by making an impact that matters for clients and society.</p>
+        <p>I'm a data and business analyst working mostly in Excel, Power BI, and SQL. My work is about the practical version of analysis: reconcile the numbers, find out where cost or revenue is leaking, and say what to do next in language a business owner can act on.</p>
+        <p>The projects below are independent and self-directed, built to hold up against professional standards — including documented quality checks and stated limitations. My background is in physiology and public health, which is where I learned to be careful with data that decisions depend on.</p>
       </div>
       <div class="about-side reveal">
       <div class="photo-frame"><img src="profile.jpg" alt="Yusuf Lawal" /></div>
       <ul class="meta-list">
         <li><span>Role</span><b>Data &amp; Business Analyst</b></li>
         <li><span>Location</span><b>Lagos, Nigeria</b></li>
-        <li><span>Focus</span><b>Finance · Healthcare · Ops</b></li>
-        <li><span>Open to</span><b>Remote / Hybrid roles</b></li>
+        <li><span>Focus</span><b>Project costs · Sales · Ops</b></li>
+        <li><span>Available for</span><b>Project work &amp; analyst roles</b></li>
       </ul>
     </div>
     </div>
@@ -212,11 +286,12 @@
 
 <section id="skills">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-tag">02 — Skills</span><h2>Tools &amp; techniques</h2></div>
+    <div class="sec-head reveal"><span class="sec-tag">03 — Skills</span><h2>Tools &amp; techniques</h2></div>
     <div class="skills">
+      <div class="skill reveal"><b>Excel &amp; Power Query</b><small>Financial modeling, ETL, pivot analysis, scenario building</small></div>
+      <div class="skill reveal"><b>Cost &amp; Variance Analysis</b><small>Budget vs actual, purchase-order variance, overrun ranking</small></div>
       <div class="skill reveal"><b>Power BI &amp; DAX</b><small>Interactive dashboards, time intelligence, cohort and variance modeling</small></div>
       <div class="skill reveal"><b>SQL (SQL Server)</b><small>Querying, joins, aggregation, and analysis over transactional data</small></div>
-      <div class="skill reveal"><b>Excel &amp; Power Query</b><small>Financial modeling, ETL, pivot analysis, scenario building</small></div>
       <div class="skill reveal"><b>Star Schema Modeling</b><small>Dimensional modeling for clean, scalable BI</small></div>
       <div class="skill reveal"><b>Financial Modeling</b><small>MRR, LTV, CAC, NRR, cohort churn, budget reallocation</small></div>
       <div class="skill reveal"><b>Executive Reporting</b><small>Decks, briefings, and strategic proposals for leadership</small></div>
@@ -227,49 +302,69 @@
 
 <section id="projects">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-tag">03 — Projects</span><h2>Selected analytical work</h2></div>
+    <div class="sec-head reveal"><span class="sec-tag">04 — Projects</span><h2>Selected analytical work</h2></div>
     <div class="proj-grid">
+      <article class="proj proj-lead reveal">
+        <div class="proj-top"><h3>MEP Project Cost Analysis</h3><span class="ico">🏗️</span></div>
+        <span class="src">Simulated case study · fictional contractor · Excel</span>
+        <div class="lead-body">
+          <p>Where is material and procurement spend running above plan, and is the overrun concentrated or spread across the portfolio? I answered that for a fictional Nigerian MEP contractor: 80 concurrent projects, 688 work orders, 1,350 purchase orders and ₦21.4bn of PO value.</p>
+          <ul class="lead-list">
+            <li>Built the workbook in Power Query and PivotTables over 11 source tables.</li>
+            <li>Added a purchase-order variance column and a portfolio KPI sheet with budget vs actual material cost.</li>
+            <li>Ranked the five worst projects by overrun and drilled into the top one by discipline and work category.</li>
+            <li>Reconciled totals, checked duplicate keys and orphans, and wrote up the data's limitations.</li>
+          </ul>
+        </div>
+        <div class="lead-foot">
+          <div class="tags"><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">PivotTables</span><span class="tag">Cost Variance</span><span class="tag">MEP / Construction</span></div>
+          <a class="link" href="https://github.com/Gbolahan5000/MEP_Project_Cost_Analysis" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
       <article class="proj reveal">
         <div class="proj-top"><h3>Vaultly SaaS Analytics</h3><span class="ico">📈</span></div>
-        <p>End-to-end financial models for a B2C SaaS startup, covering $168.3K MRR, 104.9% Net Revenue Retention, and $50.27 ARPU across multi-tier plans. Delivered Power BI dashboards and narrative decks with cohort churn and variance modeling.</p>
-        <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Financial Modeling</span><span class="tag">Cohort Analysis</span></div>
+        <span class="src">Case study · fictional SaaS startup</span>
+        <p>Built a SQL Server → Power BI pipeline across six source tables for a fictional B2C personal finance SaaS, modelling MRR, churn, LTV, CAC and the onboarding funnel to answer five questions from a CFO, a head of marketing and a head of product.</p>
+        <div class="tags"><span class="tag">SQL Server</span><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Cohort &amp; Churn</span></div>
         <a class="link" href="https://github.com/Gbolahan5000/VaultlySaaS_Analytics" target="_blank" rel="noopener">View on GitHub →</a>
       </article>
       <article class="proj reveal">
         <div class="proj-top"><h3>Clinical Efficiency &amp; Revenue Integrity</h3><span class="ico">🏥</span></div>
-        <p>Analyzed six years of hospital data ($1.42B in billings) to find the intersection between clinical operations and financial performance. Integrated Length of Stay with billing trends to inform resource allocation and flagged a 22.98% YoY revenue expansion against capacity bottlenecks.</p>
+        <span class="src">Public dataset · Kaggle</span>
+        <p>Six years of hospital records (55,000 rows, $1.42B in billings, 2019–2024) compared against length of stay to see whether revenue growth was matched by capacity. Flagged a 22.98% YoY revenue expansion sitting against capacity bottlenecks.</p>
         <div class="tags"><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">DAX</span><span class="tag">Healthcare</span></div>
         <a class="link" href="https://github.com/Gbolahan5000/Bridging-Clinical-Efficiency-and-Revenue-Integrity" target="_blank" rel="noopener">View on GitHub →</a>
       </article>
       <article class="proj reveal">
-        <div class="proj-top"><h3>Performance Marketing Analytics</h3><span class="ico">🎯</span></div>
-        <p>Analyzed 90,000 ad records ($227M spend) for a feminine wellness brand across Meta and TikTok, isolating 406 underperforming ad variants hidden by surface-level metrics. Authored seasonal budget reallocation plans to maximize ROAS.</p>
-        <div class="tags"><span class="tag">Excel</span><span class="tag">ROAS</span><span class="tag">Budget Strategy</span><span class="tag">Marketing</span></div>
-        <a class="link" href="https://github.com/Gbolahan5000/PerformanceMarketing_Analytics" target="_blank" rel="noopener">View on GitHub →</a>
-      </article>
-      <article class="proj reveal">
         <div class="proj-top"><h3>Rail Operations Analytics</h3><span class="ico">🚆</span></div>
-        <p>Simulated a real-world rail transport analytics scenario, analyzing 400K+ transactions and 640K passenger trips to understand passenger behavior, revenue performance, and operational efficiency. Produced route-level optimization and staffing proposals from time-series demand modeling.</p>
+        <span class="src">Simulated scenario · Data Analyst Playbook</span>
+        <p>Analysed 400K+ ticket transactions and 640K passenger trips across a simulated rail network to understand demand, revenue per route and staffing pressure, then proposed route-level and scheduling changes from the time-series pattern.</p>
         <div class="tags"><span class="tag">SQL</span><span class="tag">Time-Series</span><span class="tag">Logistics</span><span class="tag">Optimization</span></div>
         <a class="link" href="https://github.com/Gbolahan5000/RailOperations_Analytics" target="_blank" rel="noopener">View on GitHub →</a>
       </article>
     </div>
+
+    <h3 class="more-head reveal">More work</h3>
+    <p class="more-sub reveal">Earlier and side projects, mostly SQL practice on public datasets.</p>
     <div class="more-grid">
+      <div class="mini reveal"><h4>Performance Marketing Analytics</h4><p>Case-study dataset: 90,000 creative-level ad records across Meta and TikTok, isolating 406 weak ad variants that looked fine on surface metrics.</p><a href="https://github.com/Gbolahan5000/PerformanceMarketing_Analytics" target="_blank" rel="noopener">View repo →</a></div>
       <div class="mini reveal"><h4>Grocery Store Analytics</h4><p>SQL analysis of grocery transaction history uncovering purchasing trends and localized demand peaks.</p><a href="https://github.com/Gbolahan5000/GroceryStore_Analytics" target="_blank" rel="noopener">View repo →</a></div>
       <div class="mini reveal"><h4>MetroBank Analytics</h4><p>Customer relationships, transaction behavior, branch performance, and risk pattern analysis.</p><a href="https://github.com/Gbolahan5000/MetroBank_Analytics" target="_blank" rel="noopener">View repo →</a></div>
       <div class="mini reveal"><h4>US Superstore</h4><p>Classic retail analytics project exploring sales, profit, and regional performance.</p><a href="https://github.com/Gbolahan5000/US-Superstore" target="_blank" rel="noopener">View repo →</a></div>
       <div class="mini reveal"><h4>SQL Projects</h4><p>A collection of SQL analytics projects and query practice.</p><a href="https://github.com/Gbolahan5000/SQL_Projects" target="_blank" rel="noopener">View repo →</a></div>
     </div>
+    <p class="proj-note reveal">Every project above is my own independent work, not paid client work. Each repository README states the data source, the checks I ran, and what the analysis cannot tell you.</p>
   </div>
 </section>
 
 <section id="education">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-tag">04 — Education</span><h2>Academic background</h2></div>
+    <div class="sec-head reveal"><span class="sec-tag">05 — Education</span><h2>Academic background</h2></div>
     <div class="edu">
       <div class="edu-item reveal">
         <div class="edu-badge">🎓</div>
-        <div><div class="yr">Expected 2026</div><h4>Master of Public Health (MPH)</h4><p>Lead City University, Ibadan, Nigeria — Thesis on determinants of vaccine hesitancy among caregivers of under-five children.</p></div>
+        <div><div class="yr">2026</div><h4>Master of Public Health (MPH)</h4><p>Lead City University, Ibadan, Nigeria — Thesis on determinants of vaccine hesitancy among caregivers of under-five children.</p></div>
       </div>
       <div class="edu-item reveal">
         <div class="edu-badge">📘</div>
@@ -282,17 +377,29 @@
 <section id="contact">
   <div class="wrap">
     <div class="contact reveal">
-      <span class="sec-tag">05 — Contact</span>
-      <h2>Let's work together</h2>
-      <p>Looking for a data analyst who can translate complex data into decisions? I'm open to remote and hybrid roles. Reach out and let's talk.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=gblawal00@gmail.com" target="_blank" rel="noopener">Email me →</a>
+      <span class="sec-tag">06 — Contact</span>
+      <h2>Two ways to work with me</h2>
+      <p class="intro">Whether you have a spreadsheet problem or an analyst role to fill, here's the fastest route for each.</p>
+      <div class="routes">
+        <div class="route">
+          <h3>Need a cost checkup?</h3>
+          <p>Send me one Excel or CSV file and the questions you want answered. I'll reply with scope, timing, and a fixed fee before any work starts.</p>
+          <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gblawal00@gmail.com&amp;su=Business%20Data%20Checkup%20enquiry" target="_blank" rel="noopener">Ask about an Excel cost checkup →</a>
+        </div>
+        <div class="route">
+          <h3>Hiring an analyst?</h3>
+          <p>I'm open to data and business analyst roles, remote or hybrid, and Lagos-based for on-site. Start with the projects to see how I work.</p>
+          <a class="btn btn-ghost" href="#projects">View analyst projects</a>
+        </div>
+      </div>
+      <div class="contact-links">
+        <a class="btn btn-ghost" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gblawal00@gmail.com" target="_blank" rel="noopener">Email</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/gb-lawal/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/Gbolahan5000" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://github.com/Gbolahan5000" target="_blank" rel="noopener">GitHub @Gbolahan5000</a>
       </div>
     </div>
     <footer>
-      Built &amp; deployed with GitHub Pages · © <span id="yr"></span> Yusuf Gbolahan Lawal · <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gblawal00@gmail.com" target="_blank" rel="noopener">gblawal00@gmail.com</a>
+      Built &amp; deployed with GitHub Pages · © <span id="yr"></span> Yusuf Lawal · <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gblawal00@gmail.com" target="_blank" rel="noopener">gblawal00@gmail.com</a>
     </footer>
   </div>
 </section>
