@@ -1,0 +1,23 @@
+# Yusuf Lawal
+
+> Data and business analyst based in Lagos, Nigeria. Offers a fixed-fee Business Data Checkup for small businesses (one Excel or CSV dataset cleaned, three to five agreed questions answered, short report with next steps) and is open to data analyst roles, remote or hybrid.
+
+## Facts
+- Name: Yusuf Lawal
+- Role: Data & Business Analyst
+- Location: Lagos, Nigeria
+- Tools: Excel, Power Query, Power BI, DAX, SQL Server, star schema modeling
+- Focus: project costs, sales and operations analysis
+- Education: B.Sc. Physiology (Osun State University, 2023); MPH in progress (Lead City University, Ibadan)
+- Email: gblawal00@gmail.com
+- LinkedIn: https://www.linkedin.com/in/gb-lawal/
+- GitHub: https://github.com/Gbolahan5000
+- Case studies are independent, self-directed projects on simulated or public datasets; each page says which.
+
+## Pages
+- [Home](https://gbolahan5000.github.io/): overview, skills, projects, contact
+- [Business Data Checkup](https://gbolahan5000.github.io/business-data-checkup/): the service offer
+- [MEP Project Cost Analysis](https://gbolahan5000.github.io/projects/mep-project-cost-analysis/): Excel, purchase-order variance (simulated)
+- [Vaultly SaaS Analytics](https://gbolahan5000.github.io/projects/vaultly-saas-analytics/): SQL Server and Power BI, MRR/churn/LTV/CAC (fictional)
+- [Clinical Efficiency & Revenue Integrity](https://gbolahan5000.github.io/projects/clinical-efficiency-revenue-integrity/): hospital billings vs capacity (Kaggle data)
+- [Rail Operations Analytics](https://gbolahan5000.github.io/projects/rail-operations-analytics/): ticketing and passenger trips (simulated)
